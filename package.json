@@ -1,0 +1,37 @@
+{
+  "name": "taboo-cms",
+  "version": "1.0.0",
+  "description": "Taboo CMS",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "develop": "./node_modules/.bin/eslint ./lib && node index.js",
+    "lint": "./node_modules/.bin/eslint ./lib",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "cms",
+    "headless",
+    "decoupled",
+    "api"
+  ],
+  "author": "taboo.systems",
+  "license": "ISC",
+  "dependencies": {
+    "bunyan": "^1.8.12",
+    "bunyan-format": "^0.2.1",
+    "fs-extra": "^7.0.1",
+    "keygrip": "^1.0.3",
+    "koa": "^2.6.2",
+    "koa-router": "^7.4.0",
+    "koa-static": "^5.0.0",
+    "lodash": "^4.17.11",
+    "mustache": "^3.0.1"
+  },
+  "devDependencies": {
+    "eslint": "^5.9.0",
+    "eslint-config-prettier": "^3.3.0",
+    "eslint-plugin-prettier": "^3.0.0",
+    "prettier": "^1.15.3"
+  }
+}
