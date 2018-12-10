@@ -15,7 +15,7 @@
     }
   },
   "globals": {
-    "taboo": true
+//    "require": true
   },
   "rules": {
     "indent": ["error", 2, { "SwitchCase": 1 }],
