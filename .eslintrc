@@ -7,27 +7,33 @@
     "node": true,
     "browser": false
   },
+  "parser": "babel-eslint",
   "parserOptions": {
     "ecmaVersion": 2018,
     "sourceType": "module",
     "ecmaFeatures": {
-      "jsx": false
+      "jsx": true
     }
   },
   "globals": {
-//    "require": true
+    "window": true,
+    "navigator": true,
+    "document": true
   },
   "rules": {
+    "code": "120",
     "indent": ["error", 2, { "SwitchCase": 1 }],
     "linebreak-style": ["error", "unix"],
-    "no-console": 0,
+    "no-console": 1,
     "quotes": ["error", "single"],
+    "comma-dangle": ["error", "always-multiline"],
     "semi": ["error", "always"],
-    "prettier/prettier": [ // customizing prettier rules (unfortunately not many of them are customizable)
+    "prettier/prettier": [
       "error",
       {
+        "trailingComma": "es5",
         "singleQuote": true,
-        "trailingComma": "es5"
+        "printWidth": 120
       }
     ]
   }
