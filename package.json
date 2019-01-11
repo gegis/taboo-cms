@@ -32,7 +32,6 @@
     "koa-session": "^5.10.1",
     "koa-static": "^5.0.0",
     "lodash": "^4.17.11",
-    "mongoose": "^5.4.0",
     "mustache": "^3.0.1"
   },
   "devDependencies": {
