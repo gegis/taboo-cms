@@ -16,6 +16,10 @@
   ],
   "author": "taboo.systems",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:gegis/taboo-cms.git"
+  },
   "prettier": {
     "trailingComma": "es5",
     "singleQuote": true,
