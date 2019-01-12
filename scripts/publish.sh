@@ -2,7 +2,7 @@
 
 git push github master develop
 git push github --tags
-#npm publish
+npm publish
 
 echo "Done."
 
