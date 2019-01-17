@@ -4,7 +4,7 @@
 At the moment it is still in development phase.
 Documentation is coming up.
 
-##Documentation
+## Documentation
 It is using Koa framework. 
 In your own app you have to install it as a dependency:
 ```
@@ -66,3 +66,46 @@ README.md
 
 This web app boilerplate which includes basic modules, mongodb adapter,
 build and watch tasks and also React admin side is coming up pretty soon.
+
+
+## CTX custom properties
+```
+// ctx.flashMessages
+[
+  {
+    message: 'Your message',
+    type: 'error',
+  }
+]
+
+// ctx.taboo
+{ 
+  language: 'en',
+  locale: 'en-gb',
+  translations: {},
+  moduleRoute: {
+     method: 'GET',
+     path: '/',
+     action: [AsyncFunction: index],
+     policies: [ 'isAuthenticated', 'i18n' ],
+     order: 0,
+     modulePath: '/absolute/path/app/modules/main',
+  },
+}
+
+// ctx.view
+{
+  _view: 'viewname',
+  _layout: 'layoutname',
+  _clientConfig: clientConfig,
+  _clientConfigJson: JSON.stringify(clientConfig),
+  _version: config.version,
+  _title: config.server.views.defaultPageTitle,
+  _env: config.environment,
+  language: taboo.language,
+  locale: taboo.locale,
+  translations: taboo.translations,
+  flashMessages: ctx.flashMessages,
+  // ... all of your custom values to be used in the view
+}
+```
