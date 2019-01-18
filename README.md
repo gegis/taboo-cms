@@ -100,12 +100,13 @@ build and watch tasks and also React admin side is coming up pretty soon.
   _clientConfig: clientConfig,
   _clientConfigJson: JSON.stringify(clientConfig),
   _version: config.version,
-  _title: config.server.views.defaultPageTitle,
   _env: config.environment,
+  pageTitle: config.server.views.defaultPageTitle,
   language: taboo.language,
   locale: taboo.locale,
   translations: taboo.translations,
   flashMessages: ctx.flashMessages,
+  helpers: {},
   // ... all of your custom values to be used in the view
 }
 ```
