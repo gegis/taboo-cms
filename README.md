@@ -1,8 +1,11 @@
 # Taboo CMS
 
 ## Notes
-At the moment it is still in development phase.
-Documentation is coming up.
+We have finally launched new [Taboo CMS](https://www.npmjs.com/package/@taboo/cms) app together with
+updated [Taboo CMS Core](https://www.npmjs.com/package/@taboo/cms-core) module.
+If you are about to start new project please use this module:
+
+[@taboo/cms](https://www.npmjs.com/package/@taboo/cms)
 
 ## Documentation
 It is using Koa framework. 
